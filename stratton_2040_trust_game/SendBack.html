@@ -1,0 +1,25 @@
+{{ block title }}Trust Game: Your Choice{{ endblock }}
+{{ block content }}
+
+    {{ include Constants.instructions_template }}
+
+    <p>
+        You are Player B. Player A sent you {{ group.sent_amount }} and you received {{ tripled_amount }}.
+    </p>
+
+    {{ if group.message != "" }}
+        <p>
+            Player A sent you the following message: {{ group.message }}.
+        </p>
+    {{ endif }}
+    {{ if group.message == "" }}
+        <p>
+            Player A did not sent you a message. 
+        </p>
+    {{ endif }}
+
+    {{ formfields }}
+
+    {{ next_button }}
+
+{{ endblock }}

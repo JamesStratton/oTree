@@ -1,6 +1,8 @@
 {{ block title }}Results{{ endblock }}
 {{ block content }}
 
+    {{ include Constants.instructions_template }}
+
     {{ if player.id_in_group == 1 }}
         <p>
             You sent Participant B {{ group.sent_amount }}.
@@ -18,6 +20,6 @@
         Therefore, your total payoff is {{ player.payoff }}.
     </p>
 
-    {{ include Constants.instructions_template }}
+{{ next_button }}
 
 {{ endblock }}

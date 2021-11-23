@@ -1,0 +1,23 @@
+{% load otree %}
+
+<div class="card bg-light m-3">
+    <div class="card-body">
+
+    <h3>
+        Instructions
+    </h3>
+    <p>
+        Hello! Welcome to this game. This is a trust game with 2 players.
+    </p>
+    <p>
+        Participant A starts the game with {{ Constants.endowment }};
+        Participant B starts with nothing.
+        Participant A can send some or all of his {{ Constants.endowment }} to Participant B.
+        Before B receives this amount it will be multiplied by a certain number.
+        Participant B can then choose to send an amount back to Participant A.
+    </p>
+    <p>
+        We will play three rounds, and then conclude the game.
+    </p>
+    </div>
+</div>

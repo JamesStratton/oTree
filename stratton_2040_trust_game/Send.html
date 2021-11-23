@@ -4,7 +4,8 @@
     {{ include Constants.instructions_template }}
 
     <p>
-    You are Participant A. Now you have {{Constants.endowment}}.
+    Hello! You must be Participant A. Your endowment is {{Constants.endowment}}.
+    This round, the amount you send to Participant B will be multiplied by {{group.multiplication_factor}}.
     </p>
 
     {{ formfields }}

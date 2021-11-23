@@ -1,0 +1,12 @@
+{{ block title }}Payment{{ endblock }}
+{{ block content }}
+
+    {{ include Constants.instructions_template }}
+
+    <p>
+        This is the payment page.
+        The computer chose round {{ group.round_incentivized }} to be incentivized.
+        In this round, you earned a payment of 2.
+    </p>
+
+{{ endblock }}
